@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Main Display](main-display.md)
 * [Settings](README.md)
+* [Main Display](main-display.md)
 * [FAQ](faq.md)
 

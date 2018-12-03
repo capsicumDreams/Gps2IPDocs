@@ -1,12 +1,17 @@
 # FAQ
 
-## Can I become who I want to be?
+## Can I use GPS2IP for Apple Maps or Google Maps?
 
-That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+No. Both of these apps _only_ listen to the _onboard_ GPS.  
+If your iOS device doesn't have a GPS, you _cannot_ use either of these apps. Period.  
+We're sorry that GPS2IP \(or any other app\) can't help you.
 
-## Have you had a chance to answer the previous question?
+## Will it work with app _X_?
 
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+Possibly, yes. Please check the main website, and see if your app is listed there.
+
+If it isn't, please get in touch _before buying_ GPS2IP, and we'll try and help figure out if you can!  
+We're happy to help, and would prefer that you didn't buy something that you couldn't use.
 
 
 
