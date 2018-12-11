@@ -44,15 +44,27 @@ The levels you can select from are
 
 ### GGA
 
-Sends the GPGGA message. If desired, the time field can be transmitted with millisecond information, by hitting the **ⓘ**  info button, and enabling that option.  
+Sends the GPGGA message. If desired, the time field can be transmitted with millisecond information by hitting the **ⓘ**  info button, and enabling that option.
+
+Without milliseconds, you might get a message like`$GPGGA,193420,3351.80400,S,15112.66000,E,1,8,0.9,0.0,M,46.9,M,0,2*64`
+
+With milliseconds, you would get something more like  
+`$GPGGA,194900.882,3351.80400,S,15112.66000,E,1,8,0.9,0.0,M,46.9,M,0,2*70`
+
+{% hint style="warning" %}
 Horizontal Dilution of Position is hard-coded to `0.9`.  
 Number of satellites tracked is fixed to `8`.  
 Height of geoid above WGS84 ellipsoid is hard-coded to `46.9`m.
+{% endhint %}
 
 ### RMC
 
-Sends the GPRMC message. If desired, the time field can be transmitted with millisecond information, by hitting the **ⓘ**  info button, and enabling that option.  
+Sends the GPRMC message.  
+If desired, the time field can be transmitted with millisecond information by hitting the **ⓘ**  info button, and enabling that option, in exactly the same way as GGA.
+
+{% hint style="warning" %}
 Magnetic variation is fixed to `3.1`°W.
+{% endhint %}
 
 ### GLL
 
@@ -77,8 +89,10 @@ This displays the _True_ heading. Only on supported hardware with an electronic 
 This is a non-standard message, that transmits Inertial Attitude Data.  
 Reference, [here](https://docs.novatel.com/OEM7/Content/SPAN_Logs/PASHR.htm).
 
+{% hint style="warning" %}
 Heave is fixed to `0.0`m  
-Roll and pitch angle accuracy estimate fixed to `3.14159...`°
+Roll and pitch angle accuracy estimate fixed to `3.14159`°
+{% endhint %}
 
 Using the [True North](./#true-north) setting in the General section, you can select between a True and Magnetic north output in this sentence.
 

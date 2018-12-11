@@ -1,6 +1,14 @@
+---
+description: An explanation of the main display
+---
+
 # Main Display
 
+## 
+
 ## Getting Super Powers
+
+![](.gitbook/assets/simulator-screen-shot-iphone-5s-2018-12-04-at-14.56.37_iphone_black_side2.png)
 
 Becoming a super hero is a fairly straight forward process:
 
