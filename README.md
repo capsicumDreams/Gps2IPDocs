@@ -145,7 +145,8 @@ GPS2IP can use quite a lot of energy, and if this setting is inadvertently enabl
 
 ### True North
 
-Here you can configure whether the PASHR message outputs True or Magnetic north.
+Here you can configure whether the PASHR message outputs True or Magnetic north.  
+Whether you enable this depends on your software or personal preference.
 
 ### Lock with Password
 
