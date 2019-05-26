@@ -63,3 +63,38 @@ For iPhones, it's even easier.
 Yes, you do. All iPhone have _real_ GPS. it can use cellular or GPS networks to determine location.  
 Either way, you should be able to get your location just fine.
 
+## How do I set up an ad-hoc network on my mac?
+
+This used to be relatively easy, but in OSX 10.10, Apple preferred to obfuscate the process, while disabling the option to password protect the network at the ame time. It makes no sense - but there your are..
+
+There **is** a solution. It's ugly, but it works.
+
+Firstly, in this example, my mac is called **miniGus**, so please adjust these steps according to the name of your mac.  
+Secondly, we will create a kind of hidden network, I have called mine **gps2iploopback**. Change this name if you like.
+
+1. Open up a Terminal. \([Here's how to do that](https://macpaw.com/how-to/use-terminal-on-mac)\). 
+2. Type: `sudo networksetup -createnetworkservice gps2iploopback lo0` \(That last thing you typed was &lt;small L&gt; &lt;lowercase 'O'&gt; &lt;the number zero&gt;\)
+3. Hit return, and type in your password.
+4. Type: `sudo networksetup -setmanual gps2iploopback 172.20.12.12 255.255.255.255`
+5. Hit return, again..
+6. Now we have created a kind of network, we need to enable it.
+7. Go into **System Preferences** on your mac.
+8. Then the **Sharing** section.
+9. Go down to **Internet sharing** service on the left, and highlight it.
+10. On the right, where is says _Share your connection from:_ select the network you just created -**gps2iploopback** in this example.
+11. Next, below that, enable **Wi-Fi** for _To computers using:_
+12. By clicking the **Wi-Fi Options** button, you can set the password, and other wi-fi settings. By default the network visible to other devices will be your machine name **miniGus** in my case. You can call this network anything you like - it is what you will be connecting to from your iPhone/iPad.
+13. Make sure **Internet Sharing** is enabled by checking the box next to the service. 
+14. It will ask you if you are sure. You are - click **Start**.
+15. At this point, your mac should have created a Wi-Fi network that you can connect to with your other devices. If your mac has an internet connection, so will your devices. If your mac has no connection, you can still connect devices to it, but they won't have any internet connection. This is not necessary for most navigation software.
+16. On your iPhone/iPad, go into settings and connect to the Wi-Fi network you just created. \(**miniGus** in my case\). Enter the password you just created in step 12, and you should be connected.
+17. Now that you are connected, you can choose with method of communication you require/prefer:
+    * Use GPS2IP [as a socket](http://capsicumdreams.com/iphone/gps2ip/socketMode.php)
+    * [Push data](http://capsicumdreams.com/iphone/gps2ip/tcpPushMode.php) to your computer using TCP or UDP
+
+{% hint style="success" %}
+Congratulations! You've managed to work around Apple to enable some basic functionality that should have been there in the first place :\)
+{% endhint %}
+
+
+
