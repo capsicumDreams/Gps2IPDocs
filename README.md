@@ -255,7 +255,7 @@ The software you use **must** be expressly designed to use BLE. The operating sy
 SeaNav, for example, has been written to take advantage of BLE devices, like GPS2IP.
 {% endhint %}
 
-{% embed url="http://capsicumdreams.com/iphone/gps2ip/bluetoothMode.php" %}
+{% embed url="http://capsicumdreams.com/gps2ip/bluetoothMode.php" %}
 
 
 
