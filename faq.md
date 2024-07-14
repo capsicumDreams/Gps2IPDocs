@@ -58,8 +58,8 @@ No cellular network required.\
 
 Depending on what navigation software you are running, and your requirements, you can either:
 
-* Use GPS2IP [as a socket](http://capsicumdreams.com/iphone/gps2ip/socketMode.php)
-* [Push data](http://capsicumdreams.com/iphone/gps2ip/tcpPushMode.php) to your computer with GPS2IP
+* Use GPS2IP [as a socket](https://capsicumdreams.com/gps2ip/socketMode.php)
+* [Push data](https://capsicumdreams.com/gps2ip/tcpPushMode.php) to your computer with GPS2IP
 
 ## Does my device have a real GPS?
 
